@@ -360,6 +360,7 @@ a {
 			transition: 0.3s all ease-in-out;
 			font-family: "IQOSSansArabicW04-Arabic-Light";
 			font-size: 18px;
+			min-height: 48px;
 			@media (max-width: 767px) {
 				font-size: 14px;
 			}
