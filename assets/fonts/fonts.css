@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "IQOSSansArabicW04-Arabic-Bold";
+    src: url(IQOSSansArabicW04-Bold.woff),
+    url(IQOSSansArabicW04-Bold.woff2);
+}
+@font-face {
+    font-family: "IQOSSansArabicW04-Arabic-Regular";
+    src: url(IQOSSansArabicW04-Regular.woff),
+    url(IQOSSansArabicW04-Regular.woff2);
+}
+@font-face {
+    font-family: "IQOSSansArabicW04-Arabic-Light";
+    src: url(IQOSSansArabicW04-Light.woff),
+    url(IQOSSansArabicW04-Light.woff2);
+}
