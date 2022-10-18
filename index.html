@@ -23,7 +23,7 @@
          يرجي الإجابة علي السؤال التالي
       </div>
       <div class="form">
-         <form action="video.html">
+         <form id="form_id" action="video.html">
             <div class="custom__radio">
                <div class="radio">
                   <label for="up-21">
@@ -48,16 +48,22 @@
                <div class="groups">
                   <div class="form__group">
                      <label for="name">الاسم:</label>
-                     <input type="text" name="name" id="name" class="form__control" required />
+                     <input type="text" name="name" id="name" class="form__control" />
+                     <div class="valid-feedback"></div>
+                     <div class="invalid-feedback"></div>
                   </div>
                   <div class="form__group">
                      <label for="mobile">رقم الموبايل:</label>
-                     <input type="text" name="mobile" id="mobile" class="form__control" required />
+                     <input type="text" name="mobile" id="mobile" class="form__control" />
+                     <div class="valid-feedback"></div>
+                     <div class="invalid-feedback"></div>
                   </div>
                   <div class="form__group w__100">
-                     <label for="birthdate">تاريخ الميلاد:</label>
-                     <input type="text" name="date" id="birthdate" class="form__control birthdate ar"
+                     <label for="birthday">تاريخ الميلاد:</label>
+                     <input type="text" name="birthday" id="birthday" class="form__control birthdate ar"
                         data-format="DD-MM-YYYY" required />
+                     <div class="valid-feedback"></div>
+                     <div class="invalid-feedback"></div>
                   </div>
                   <div class="custom__check">
                      <label for="privacy">
@@ -79,6 +85,7 @@
    </div>
 
    <script src="assets/lib/jquery/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
    <script src="assets/lib/birthday/birthday.min.js"></script>
    <script src="assets/js/scripts.js"></script>
 </body>
