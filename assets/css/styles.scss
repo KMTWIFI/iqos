@@ -146,6 +146,10 @@ body {
 	}
 }
 
+a {
+	display: inline-block;
+}
+
 .wrapper {
 	overflow: hidden;
 	padding: 50px 0;
@@ -381,8 +385,7 @@ a {
 		}
 	}
 	.form__btn,
-	button[class="btn"],
-	button[class="btn btn__next"] {
+	.btn__link {
 		display: none;
 	}
 	.custom__check {

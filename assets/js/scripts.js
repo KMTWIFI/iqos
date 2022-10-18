@@ -7,7 +7,7 @@ $(function () {
 	//    });
 	// }
 	const birthDate = $(".birthdate.ar");
-	if (birthDate) {
+	if (birthDate.lenght > 0) {
 		birthDate.bootstrapBirthday({
 			widget: {
 				wrapper: {
@@ -83,16 +83,15 @@ $(function () {
 
 	const customRadio = $(".custom__radio input[name='age']");
 	const form = $(".form__btn");
+	const btnLink = $(".btn__link");
 	if (customRadio) {
 		customRadio.on("change", function () {
 			if ($(this).val() === "up-21") {
-				$(this).parents("form").attr("action", "video.html");
 				form.fadeIn();
-				$(".form button[class='btn']").fadeIn().text("إرسال");
+				btnLink.fadeOut();
 			} else {
-				$(this).parents("form").attr("action", "https://erwifi.net/");
+				btnLink.fadeIn();
 				form.fadeOut();
-				$(".form button[class='btn']").fadeIn().text("التالي");
 			}
 		});
 	}
