@@ -380,6 +380,11 @@ a {
 			}
 		}
 	}
+	.form__btn,
+	button[class="btn"],
+	button[class="btn btn__next"] {
+		display: none;
+	}
 	.custom__check {
 		.text {
 			color: #fff;
@@ -606,4 +611,8 @@ table {
 			margin-right: auto;
 		}
 	}
+}
+
+.text__center {
+	text-align: center;
 }
