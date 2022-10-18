@@ -7,7 +7,7 @@ $(function () {
 	//    });
 	// }
 	const birthDate = $(".birthdate.ar");
-	if (birthDate.lenght > 0) {
+	if (birthDate.length) {
 		birthDate.bootstrapBirthday({
 			widget: {
 				wrapper: {
