@@ -9,7 +9,7 @@ $(function () {
 	const birthDate = $(".birthdate.ar");
 	if (birthDate.length) {
 		birthDate.bootstrapBirthday({
-			minAge: 22,
+			minAge: 21,
 			widget: {
 				wrapper: {
 					tag: "div",
