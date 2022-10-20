@@ -1,52 +1,61 @@
 <!DOCTYPE html>
 <html lang="eg">
-
-<head>
-   <meta charset="UTF-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
-   <title>IQOS Heated Tobacco Products | IQOS Egypt</title>
-   <link rel="stylesheet" href="assets/css/styles.min.css" />
-   <script>
-      var secondsThree = 20;
-      var fooThree;
-      function updateSecsThree() {
-         document.getElementById("secondsThree").innerHTML = secondsThree;
-         secondsThree--;
-         if (secondsThree == -1) {
-            clearInterval(fooThree);
-            document.getElementById("secondsThree").innerHTML = "انتهاء";
-            window.location.href = "https://youtu.be/J7SOfbFzY-E";
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="shortcut icon"
+         href="assets/images/favicon.ico"
+         type="image/x-icon"
+      />
+      <title>IQOS Heated Tobacco Products | IQOS Egypt</title>
+      <link rel="stylesheet" href="assets/css/styles.min.css" />
+      <script>
+         var secondsThree = 20;
+         var fooThree;
+         function updateSecsThree() {
+            document.getElementById("secondsThree").innerHTML = secondsThree;
+            secondsThree--;
+            if (secondsThree == -1) {
+               clearInterval(fooThree);
+               document.getElementById("secondsThree").innerHTML = "انتهاء";
+               window.location.href = "https://youtu.be/J7SOfbFzY-E";
+            }
          }
-      }
-      function countdownTimer() {
-         fooThree = setInterval(function () {
-            updateSecsThree();
-         }, 1000);
-      }
-      countdownTimer();
-   </script>
-</head>
+         function countdownTimer() {
+            fooThree = setInterval(function () {
+               updateSecsThree();
+            }, 1000);
+         }
+         countdownTimer();
+      </script>
+   </head>
 
-<body>
-   <div class="wrapper">
-      <div class="logo">
-         <img src="assets/images/logo.png" width="400" alt="IQOS" />
-      </div>
-      <div class="product__img">
-         <img src="assets/images/product.webp" width="450" alt="product" />
-      </div>
-      <a href="https://www.iqos.com/eg/ar/home.html" target="_blank" class="btn">
-         إكتشف
-      </a>
-      <div class="desc">
-         إكتشف المزيد من الأسباب لإستخدام IQOS علي
-         <a href="https://www.iqos.com/eg/ar/home.html" target="_blank">iqos.com</a>
-      </div>
+   <body>
+      <div class="wrapper">
+         <div class="logo">
+            <img src="assets/images/logo.png" width="400" alt="IQOS" />
+         </div>
+         <div class="product__img">
+            <img src="assets/images/product.webp" width="450" alt="product" />
+         </div>
+         <a
+            href="https://www.iqos.com/eg/ar/home.html"
+            target="_blank"
+            class="btn"
+         >
+            إكتشف
+         </a>
+         <div class="desc">
+            إكتشف المزيد من الأسباب لإستخدام IQOS علي
+            <a href="https://www.iqos.com/eg/ar/home.html" target="_blank"
+               >iqos.com</a
+            >
+         </div>
 
-      <div class="video">
-         <!-- <div style="--aspect-ratio: 16/9">
+         <div class="video">
+            <!-- <div style="--aspect-ratio: 16/9">
                <iframe
                   src="https://www.youtube.com/embed/TDbnfrenPn4?autoplay=1&mute=1"
                   frameborder="0"
@@ -54,28 +63,31 @@
                   allowfullscreen
                ></iframe>
             </div> -->
-         <video autoplay="autoplay" playsinline muted loop controls>
-            <source src="assets/video/video.mp4" type="video/mp4">
-         </video>
-         <div class="time text__center btn" id="secondsThree"></div>
-         <div class="desc text__white text__left">
-            رقم التسجيل الضريبي (450-255-747)
+            <video autoplay="autoplay" playsinline muted loop controls>
+               <source src="assets/video/video.mp4" type="video/mp4" />
+            </video>
+            <div class="time text__center btn" id="secondsThree"></div>
+            <div class="desc text__white text__left">
+               رقم التسجيل الضريبي (450-255-747)
+            </div>
          </div>
       </div>
-   </div>
-   <div class="footer">
-      <div class="gold__product">
-         <img src="assets/images/product-gold.png" width="220" alt="product-gold" />
+      <div class="footer">
+         <div class="gold__product">
+            <img
+               src="assets/images/product-gold.png"
+               width="220"
+               alt="product-gold"
+            />
+         </div>
+         <div class="desc text__center">
+            هذا المنتج غير خال من الضرر و يحتوي علي النيكوتين, <br />
+            الذي يتسبب الإدمان. لاستعمال البالغين فقط
+         </div>
       </div>
-      <div class="desc text__center">
-         هذا المنتج غير خال من الضرر و يحتوي علي النيكوتين, <br />
-         الذي يتسبب الإدمان. لاستعمال البالغين فقط
-      </div>
-   </div>
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-   <script src="assets/js/scripts.js"></script>
-</body>
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+      <script src="assets/js/scripts.js"></script>
+   </body>
 </html>
