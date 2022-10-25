@@ -156,8 +156,38 @@ a {
 	max-width: 600px;
 	margin-left: auto;
 	margin-right: auto;
-	@media (max-width: 767px) {
-		padding: 30px 0;
+	@media (max-width: 991px) {
+		padding: 30px;
+	}
+	&.privacy__page {
+		max-width: 1200px;
+		.heading {
+			margin: 30px 0;
+		}
+		h2 {
+			font-size: 20px;
+			font-family: "IQOSSansArabicW04-Arabic-Bold";
+			margin-bottom: 20px;
+		}
+		h3 {
+			font-size: 18px;
+			font-family: "IQOSSansArabicW04-Arabic-Bold";
+			margin-bottom: 20px;
+		}
+		p,
+		ul {
+			margin-bottom: 15px;
+			font-family: "IQOSSansArabicW04-Arabic-Regular";
+		}
+		ul {
+			list-style: inside;
+		}
+		hr {
+			border: none;
+			height: 1px;
+			background: $secondary;
+			width: 100%;
+		}
 	}
 }
 
@@ -389,6 +419,13 @@ a {
 		display: none;
 	}
 	.custom__check {
+		a {
+			color: #fff;
+			transition: .3s all ease-in-out;
+			&:hover {
+				color: $secondary;
+			}
+		}
 		.text {
 			color: #fff;
 			position: relative;
