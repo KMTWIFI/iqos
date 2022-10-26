@@ -1,90 +1,127 @@
 <!DOCTYPE html>
 <html lang="eg">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>free wifi</title>
+      <link rel="stylesheet" href="assets/css/styles.min.css" />
+   </head>
 
-<head>
-   <meta charset="UTF-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
-   <title>IQOS Heated Tobacco Products | IQOS Egypt</title>
-   <link rel="stylesheet" href="assets/css/styles.min.css" />
-</head>
-
-<body>
-   <div class="wrapper">
-      <div class="heading">
-         <h1>مرحبا</h1>
-      </div>
-      <div class="wifi">
-         <img src="assets/images/wifi.svg" alt="wifi" />
-      </div>
-      <div class="desc">
-         <span>لإستخدام الإنترنت المجاني </span><br />
-         يرجي الإجابة علي السؤال التالي
-      </div>
-      <div class="form">
-         <form id="form_id" action="video.html">
-            <div class="custom__radio">
-               <div class="radio">
-                  <label for="up-21">
-                     <input type="radio" name="age" id="up-21" value="up-21" />
-                     <span>أكبر من +21 سنة و مدخن</span>
-                  </label>
-               </div>
-               <div class="radio">
-                  <label for="up-no-21">
-                     <input type="radio" name="age" id="up-no-21" value="up-no-21" />
-                     <span>أكبر من +21 سنة و غير مدخن</span>
-                  </label>
-               </div>
-               <div class="radio">
-                  <label for="down-21">
-                     <input type="radio" name="age" id="down-21" value="down-21" />
-                     <span>أصغر من -21 سنة و غير مدخن</span>
-                  </label>
-               </div>
-            </div>
-            <div class="form__btn">
-               <div class="groups">
-                  <div class="form__group">
-                     <label for="name">الاسم:</label>
-                     <input type="text" name="name" id="name" class="form__control" />
-                     <div class="invalid-feedback">من فضلك ادخل الاسم</div>
+   <body>
+      <div class="wrapper">
+         <div class="heading">
+            <h1>مرحبا</h1>
+         </div>
+         <div class="wifi">
+            <img src="assets/images/wifi.svg" alt="wifi" />
+         </div>
+         <div class="desc">
+            <span>لإستخدام الإنترنت المجاني </span><br />
+            يرجي الإجابة علي السؤال التالي
+         </div>
+         <div class="form">
+            <form id="form_id" action="video.html">
+               <div class="custom__radio">
+                  <div class="radio">
+                     <label for="up-21">
+                        <input
+                           type="radio"
+                           name="age"
+                           id="up-21"
+                           value="up-21"
+                        />
+                        <span>أكبر من +21 سنة و مدخن</span>
+                     </label>
                   </div>
-                  <div class="form__group">
-                     <label for="mobile">رقم الموبايل:</label>
-                     <input type="tel" name="mobile" id="mobile" class="form__control" />
-                     <div class="invalid-feedback">من فضلك ادخل رقم الهاتف صحيح </div>
+                  <div class="radio">
+                     <label for="up-no-21">
+                        <input
+                           type="radio"
+                           name="age"
+                           id="up-no-21"
+                           value="up-no-21"
+                        />
+                        <span>أكبر من +21 سنة و غير مدخن</span>
+                     </label>
                   </div>
-                  <div class="form__group w__100">
-                     <label for="birthday">تاريخ الميلاد:</label>
-                     <input type="text" name="birthday" id="birthday" class="form__control birthdate ar"
-                        data-format="DD-MM-YYYY" />
-                     <div class="invalid-feedback">من فضلك ادخل تاريخ الميلاد</div>
-                  </div>
-                  <div class="custom__check">
-                     <label for="privacy">
-                        <input type="checkbox" name="privacy" id="privacy" />
-                        <span class="text">أوافق <a href="privacy.html" target="_blank"><span>علي الشروط</span> و<span>الاحكام و سياسة الخصوصية</span></a>
-                        </span>
+                  <div class="radio">
+                     <label for="down-21">
+                        <input
+                           type="radio"
+                           name="age"
+                           id="down-21"
+                           value="down-21"
+                        />
+                        <span>أصغر من -21 سنة و غير مدخن</span>
                      </label>
                   </div>
                </div>
-               <div class="text__center">
-                  <button type="submit" class="btn">إرسال</button>
+               <div class="form__btn">
+                  <div class="groups">
+                     <div class="form__group">
+                        <label for="name">الاسم:</label>
+                        <input
+                           type="text"
+                           name="name"
+                           id="name"
+                           class="form__control"
+                        />
+                        <div class="invalid-feedback">من فضلك ادخل الاسم</div>
+                     </div>
+                     <div class="form__group">
+                        <label for="mobile">رقم الموبايل:</label>
+                        <input
+                           type="tel"
+                           name="mobile"
+                           id="mobile"
+                           class="form__control"
+                        />
+                        <div class="invalid-feedback">
+                           من فضلك ادخل رقم الهاتف صحيح
+                        </div>
+                     </div>
+                     <div class="form__group w__100">
+                        <label for="birthday">تاريخ الميلاد:</label>
+                        <input
+                           type="text"
+                           name="birthday"
+                           id="birthday"
+                           class="form__control birthdate ar"
+                           data-format="DD-MM-YYYY"
+                        />
+                        <div class="invalid-feedback">
+                           من فضلك ادخل تاريخ الميلاد
+                        </div>
+                     </div>
+                     <div class="custom__check">
+                        <label for="privacy">
+                           <input type="checkbox" name="privacy" id="privacy" />
+                           <span class="text"
+                              >أوافق
+                              <a href="privacy.html" target="_blank"
+                                 ><span>علي الشروط</span> و<span
+                                    >الاحكام و سياسة الخصوصية</span
+                                 ></a
+                              >
+                           </span>
+                        </label>
+                     </div>
+                  </div>
+                  <div class="text__center">
+                     <button type="submit" class="btn">إرسال</button>
+                  </div>
                </div>
-            </div>
-            <div class="text__center">
-               <a href="https://erwifi.net/" class="btn btn__link">التالي</a>
-            </div>
-         </form>
+               <div class="text__center">
+                  <a href="https://erwifi.net/" class="btn btn__link">التالي</a>
+               </div>
+            </form>
+         </div>
       </div>
-   </div>
 
-   <script src="assets/lib/jquery/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
-   <script src="assets/lib/birthday/birthday.min.js"></script>
-   <script src="assets/js/scripts.js"></script>
-</body>
-
+      <script src="assets/lib/jquery/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+      <script src="assets/lib/birthday/birthday.min.js"></script>
+      <script src="assets/js/scripts.js"></script>
+   </body>
 </html>
